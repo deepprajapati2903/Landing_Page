@@ -1,0 +1,322 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.header{
+    background-image: linear-gradient(rgba(20, 79, 72, 0.7),rgba(38, 85, 76, 0.7)),url("background.webp");
+    width: 100%;
+    height: 85vh;
+    background-size: cover;
+    background-position: center;
+    position:relative;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2% 6%;
+}
+.nav-links ul li{
+    display: inline-block;
+    list-style: none;
+    padding: 10px 12px;
+}
+.nav-links ul li a{
+    text-decoration: none;
+    color:aliceblue;
+    font-size: 18px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: transparent;
+    transition: 0.8s;
+}
+.nav-links ul li a:hover{
+    background: #f44336;
+    padding: 3px;
+    border-radius: 4px;
+}
+.header img{
+    width: 150px;
+    border-radius: 7px;
+}
+.text-box{
+    text-align: center ;
+    margin-top: 10%;
+    color: #fff;
+}
+.text-box h1{
+    font-size: 50px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.text-box p{
+    margin: 10px 0 40px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.hero-btn{
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding:12px 34px;
+    font-size: 13px;
+    background: transparent;
+    cursor: pointer;
+}
+.hero-btn:hover{
+    border: 1px solid #f44336;
+    background: #f44336;
+    box-shadow: 0 8px 8px rgb(9, 9, 9);
+    transition: 1s;
+}
+@media(max-width:700px){
+    
+    .text-box h1{
+        font-size: 20px;
+    }
+    .nav-links ul li{
+        display: block;
+        text-align: center;
+    }
+    nav{
+        display: block;
+    }
+    nav img{
+        width: 250px;
+    }
+    .header{
+        overflow:scroll;
+    }
+}
+
+@media(min-width:700px) and (max-width:950px){
+    .text-box{
+        margin-top:25%;
+    }
+}
+@media(max-width:200px){
+    .hero-btn{
+        font-size: 8px;
+        padding: 2px 5px;
+        
+    }
+}
+
+/* ----------region-------- */
+
+
+.region{
+    width: 80%;
+    margin: auto;
+    margin-top:5%;
+    text-align: center;
+}
+.row{
+    display: flex;
+}
+.region-col{
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+    padding: 45px 8px 5px;
+    position: relative;
+    overflow: hidden;
+}
+.region-col img{
+    width: 100%;
+    height: 200px; 
+    border-radius: 15px;
+}
+.region-col p{
+    padding: 0;
+    text-align: center;
+    overflow: hidden;
+}
+.region-col h3{
+    margin-top: 12px;
+    margin-bottom: 13px;
+    text-align: center;
+}   
+
+@media(max-width:700px){
+    .row{
+        display: block;
+    }
+}
+
+/* --------------trip---------- */
+
+.trip{
+    width: 80%;
+    margin: auto;
+    margin-top:2%;
+    text-align: center;
+}
+.row-1{
+    display: flex;
+    justify-content: space-around;
+    flex-flow: wrap;
+    margin-top: 3%;
+    margin-bottom: 5%;
+}
+.trip-col{
+    padding: 45px 8px 5px;
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+}
+.box{
+    display: flex;
+    width: 100%;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 2px 8px 8px rgba(29, 53, 48, 0.7);
+    position: relative;
+    overflow: hidden;
+}
+.box img{
+    width: 180px;
+    position: relative;
+    overflow: hidden;
+}
+.bt{
+    padding: 6px;
+}
+.bt p{
+    padding-top: 12px;
+}
+.bt h4{
+    padding-top: 10px;
+}
+.x{
+    color: rgb(78, 215, 78);
+}
+
+
+/* -----------application Demo---------- */
+
+.app{
+    margin: auto;
+    width: 80%;
+    margin-top: 5%;
+    text-align: center;
+}
+.app-row{
+    display: flex;
+    margin: 5% 0;
+    background: #0c0b0b;
+    box-shadow: 0 12px 12px rgb(109, 88, 88);
+}
+.app-col{
+    position: relative;
+    overflow: hidden;
+}
+.app-col2{
+    position: relative;
+    overflow: hidden;
+    color: #141212;
+    padding-left: 40px;
+    padding-right: 40px;
+    background: #eceaea;
+    width: 55%;
+}
+.app-col img{
+    width: 700px;
+    position: relative;
+    overflow: hidden;
+}
+.app-col2 h2{
+    text-align: justify;
+    padding: 20px 30px 0 30px ;
+}
+.app-col2 p{
+    text-align: justify;
+    padding: 30px 30px 0 30px ;
+
+}
+.app-box{
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    margin-top: 2%;
+    padding: 20px 30px 0 30px ;
+}
+.other{
+    position: relative;
+    overflow: hidden;
+}
+.qr img{
+    width: 230px;
+}
+.other img{
+    width: 200px;
+}
+
+@media(max-width:900px){
+    .app-row{
+        display: block;
+        position: relative;
+    }
+    .app-box{
+        display: block;
+    }
+    .other{
+        margin-top: 3%;
+    }
+    .app-col2{
+        color: #fff;
+    }
+
+}
+@media(min-width:900px) and (max-width:1450px){
+    .app-row{
+        display: block;
+        position: relative;
+    }
+    .app-col2{
+        width: 50%;
+        color: #fff;
+
+    }
+    .app-col img{
+        width: 1200px;
+    }
+    .other{
+        padding-left: 8px;
+    }
+}
+
+
+/* ----------About----------- */
+
+.about{
+    width: 100%;
+    background: black;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 0px 150px 0;
+    position:relative;
+    overflow: hidden;
+}
+.about-box li{
+    list-style: none;
+    padding: 10px;
+    font-size: 20px;
+    position: relative;
+    overflow: hidden;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.about-box h4{
+    font-family:Arial, Helvetica, sans-serif;
+    padding: 10px;
+}
+
+@media(max-width:700px){
+    .about{
+    display: block;
+    text-align: center;
+    }
+    .about-box{
+        margin-top: 5%;
+    }
+}
+
